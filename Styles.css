@@ -1,24 +1,15 @@
-body {
-    font-family: Arial, sans-serif;
-    text-align: center;
-    padding: 20px;
+/* Example styles.css */
+#upgradeList {
+    list-style-type: none;
+    padding: 0;
 }
 
-#gameArea {
-    max-width: 600px;
-    margin: 0 auto;
-}
-
-button {
-    padding: 10px 20px;
-    font-size: 16px;
+li {
     cursor: pointer;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    border-radius: 5px;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
 }
 
-button:hover {
-    background-color: #45a049;
+li.locked {
+    color: #999;
 }
