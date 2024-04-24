@@ -1,95 +1,43 @@
-/* styles.css */
-
+*{
+    user-select: none; /* Prevent text selection */
+}
 body {
     font-family: Arial, sans-serif;
-    text-align: center;
-    padding: 20px;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    transition: background-color 0.5s, color 0.5s; /* Smooth transition for color changes */
 }
 
-#gameArea {
-    max-width: 600px;
-    margin: 0 auto;
-    background-color: #f8f9fa;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+#mainContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80%;
 }
-
-button {
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    margin: 5px;
-}
-
-button:hover {
-    background-color: #0056b3;
-}
-
-#resourceCount {
-    font-size: 24px;
-    font-weight: bold;
-    color: #28a745;
-}
-
-#upgradeArea {
-    margin-top: 30px;
-    border-top: 2px solid #007bff;
-    padding-top: 20px;
-}
-
-/* styles.css */
-
-/* Upgrade list styles */
-#upgradeList {
-    list-style-type: none;
-    padding: 0;
-    margin-top: 20px;
-}
-
-#upgradeList li {
-    cursor: pointer;
-    padding: 10px;
-    border-bottom: 1px solid #ccc;
-    background-color: #f9f9f9;
-    transition: background-color 0.3s ease;
-}
-
-#upgradeList li:hover {
-    background-color: #e9ecef;
-}
-
-#upgradeList li.locked {
-    color: #999;
-}
-
-#upgradeList li.unlocked {
-    color: #28a745;
-}
-
-#upgradeList li.affordable {
-    color: #ffc107;
-}
-
-/* Resource count display styles */
-#resourceCount {
-    font-size: 36px;
-    font-weight: bold;
-    color: #007bff;
-    margin-top: 20px;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+#EssContainer{
+    display: flex;
+    justify-content: stretch;
+    align-items: center;
+    width: 100%;
+    height: 20%;
 }
 
 
-#upgradeList li {
-    cursor: pointer;
-    padding: 10px;
-    border-bottom: 1px solid #ccc;
-    background-color: #f9f9f9;
-    transition: background-color 0.3s ease;
-    animation: fadeIn 0.5s ease;
+.counter {
+    font-size: 3em;
+    user-select: none; /* Prevent text selection */
+}
+
+#essenceContainer {
+    width: 100px;
+    background-color: blue;
+    font-size: 3em;
+    text-align: left;
+    user-select: none; /* Prevent text selection */
+    position:fixed;
+    display:flex;
+    margin: 10px;
+    justify-content: left;
 }

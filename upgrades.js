@@ -3,10 +3,10 @@
 // Upgrade data
 const upgrades = [
     {
-        id: 'production_1',
-        name: 'Production Upgrade 1',
+        id: 'micro',
+        name: 'micro',
         description: 'Increases resource production rate by 10%.',
-        baseCost: 100,
+        baseCost: 10,
         type: 'production',
         effect: 0.1, // 10% increase per purchase
         unlocked: false,
@@ -14,8 +14,8 @@ const upgrades = [
         purchaseCount: 0 // Track number of purchases
     },
     {
-        id: 'efficiency_1',
-        name: 'Efficiency Upgrade 1',
+        id: 'mini',
+        name: 'mini',
         description: 'Reduces resource cost by 20%.',
         baseCost: 200,
         type: 'efficiency',
@@ -28,7 +28,6 @@ const upgrades = [
 ];
 
 // Function to render upgrades
-// upgrades.js
 
 // Function to render upgrades
 function renderUpgrades() {
